@@ -8,4 +8,4 @@ async def read_root():
 
 @app.get("/data/{name}")
 async def read_data(name: str):
-    return {f"hello {name}"}
+    return {"message": f"Hell on World {name}"}

@@ -9,6 +9,6 @@ def test_read_root():
     assert response.json() == {"message":"say kasse"}
 
 def test_read_data():
-    response = client.get("/data")
+    response = client.get("/data/ion")
     assert response.status_code == 200
-    assert response.json() == {"message":"say kasse"}
+    assert response.json() == {"message":"Hell on World ion"}
